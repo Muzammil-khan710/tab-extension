@@ -1,20 +1,24 @@
 import React, { useState ,useEffect } from 'react'
 
-const TIme = () => {
+const Time = () => {
 
     const [time, setTime] = useState(new Date()) 
 
     useEffect(() => {
-        const timer = setInterval(() => {
+        setInterval(() => {
            setTime(new Date()) 
-        }, 1000);
+        }, 20000);
     })
+
+    const hours = time.getHours()
+
+    const minutes = time.getMinutes()
     
   return (
     <>
-        <div>{time.toLocaleTimeString()}</div>
+        <div>{hours} : {minutes} </div>
     </>
   )
 }
 
-export { TIme }
+export { Time }

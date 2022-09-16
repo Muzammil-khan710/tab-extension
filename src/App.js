@@ -1,13 +1,13 @@
 import { Greeting } from './components/Greeting';
 import { SingleQuote } from './components/SingleQuote';
-import { TIme } from './components/TIme';
+import { Time } from './components/Time';
 
 
 function App() {
   return (
     <div>
       <h1>Hello world</h1>
-      <TIme/>
+      <Time/>
       <SingleQuote/>
       <Greeting/>
     </div>
