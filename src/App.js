@@ -1,3 +1,4 @@
+import { Greeting } from './components/Greeting';
 import { SingleQuote } from './components/SingleQuote';
 import { TIme } from './components/TIme';
 
@@ -8,6 +9,7 @@ function App() {
       <h1>Hello world</h1>
       <TIme/>
       <SingleQuote/>
+      <Greeting/>
     </div>
   );
 }
