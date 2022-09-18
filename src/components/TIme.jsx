@@ -10,9 +10,9 @@ const Time = () => {
         }, 20000);
     })
 
-    const hours = time.getHours()
+    const hours = time.getHours().toLocaleString("en-US", {minimumIntegerDigits : 2})
 
-    const minutes = time.getMinutes()
+    const minutes = time.getMinutes().toLocaleString("en-US", {minimumIntegerDigits : 2})
     
   return (
     <>
