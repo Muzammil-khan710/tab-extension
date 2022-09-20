@@ -72,7 +72,7 @@ const Todo = () => {
         </>
       ) : (
         <button className='btn' onClick={() => setOpenTodoList(true)}>
-          Add Todo List
+          Open Todo List
         </button>
       )}
     </div>
