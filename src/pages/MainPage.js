@@ -1,7 +1,7 @@
 import React from 'react'
 import { Greeting } from '../components/Greeting'
 import { SingleQuote } from '../components/SingleQuote'
-import { Time } from '../components/Time'
+import { Time } from '../components/Clock'
 import { Todo } from '../components/Todo'
 import { Weather } from '../components/Weather'
 import { useGlobal } from '../context/GlobalContext'
