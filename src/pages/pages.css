@@ -20,6 +20,8 @@
     border-bottom: 1px solid black;
     margin-bottom: 1.5rem ;
     font-size: 1.5rem;
+    background-color: transparent;
+    color: #f0f8ff;
 }
 
 .focus {
