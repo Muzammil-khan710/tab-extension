@@ -22,3 +22,8 @@
 .weather-btn:hover {
     color: #f1f1f1;
 }
+
+.time {
+    font-size: 5rem;
+    text-align: center;
+}

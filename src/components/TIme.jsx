@@ -16,7 +16,7 @@ const Time = () => {
     
   return (
     <>
-        <div>{hours} : {minutes} </div>
+        <div className="time">{hours} : {minutes} </div>
     </>
   )
 }
