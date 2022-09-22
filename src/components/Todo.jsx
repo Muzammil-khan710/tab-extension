@@ -32,7 +32,7 @@ const Todo = () => {
   );
 
   return (
-    <div className='todo-wrapper'>
+    <div className='todo-container'>
       {openTodoList ? (
         <>
           <div className='todo-heading'>Todo List</div>
@@ -57,7 +57,7 @@ const Todo = () => {
                   checked={item.checked}
                   onChange={() => toggleChecked(item)}
                 />
-                {item.todo}
+                {"  "}{item.todo}
               </label>
             ))}
           </div>
