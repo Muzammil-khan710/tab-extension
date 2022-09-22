@@ -1,10 +1,5 @@
 import axios from 'axios'
-import { Greeting } from './components/Greeting';
-import { SingleQuote } from './components/SingleQuote';
-import { Time } from './components/Time';
-import { Todo } from './components/Todo';
 import { useEffect, useState } from 'react';
-import { Weather } from './components/Weather';
 import { MainPage } from './pages/MainPage';
 
 
@@ -30,11 +25,6 @@ function App() {
 
   return (
     <div style={{backgroundImage : `url(${imageUrl})`, backgroundSize : "cover", height: "100vh", width : "100vw"}}>
-      {/* <Time/>
-      <SingleQuote/>
-      <Greeting/>
-      <Todo/>
-      <Weather/> */}
       <MainPage/>
     </div>
   );
