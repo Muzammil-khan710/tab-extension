@@ -1,13 +1,16 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 
 const GlobalContext = createContext()
  
 const useGlobal = () => useContext(GlobalContext)
 
 const GlobalProvider = ({children}) => {
-    console.log('from global context')
+    
+    const [ name, setName ] = useState("")
+    const [ mainFocus, setMainFocus ] = useState("")
+
     return(
-        <GlobalContext.Provider>
+        <GlobalContext.Provider value={{name, setName, mainFocus, setMainFocus}}>
             {children}
         </GlobalContext.Provider>
     )

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
+import { useGlobal } from "../context/GlobalContext";
 
 const Greeting = () => {
     const [greeting, setGreeting] = useState("")
-    const [name] = useState("Muzammil")
+    const { name } = useGlobal()
 
     useEffect(() => {
         const greetTime = new Date().getHours()

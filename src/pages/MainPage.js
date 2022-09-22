@@ -10,7 +10,7 @@ const MainPage = () => {
     <div style={{display: "flex", flexDirection : "column"}}>
       <Weather/>
       <Time/>
-      <Greeting/>
+      <Greeting/> 
       <SingleQuote/>
       <Todo/>
     </div>
