@@ -4,6 +4,7 @@ import { SingleQuote } from './components/SingleQuote';
 import { Time } from './components/Time';
 import { Todo } from './components/Todo';
 import { useEffect, useState } from 'react';
+import { Weather } from './components/Weather';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   const unsplashUrl = async () => {
     try {
     const response = await axios.get(
-      `https://api.unsplash.com/photos/random/?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}&&orientation=landscape&&query=travel%20dark`
+      `https://api.unsplash.com/photos/randm/?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}&&orientation=landscape&&query=travel%20dark`
     )
       setImageUrl(response.data.urls.regular)
     console.log('res',response)
@@ -28,11 +29,12 @@ function App() {
 
   return (
     <div style={{backgroundImage : `url(${imageUrl})`, backgroundSize : "cover", height: "100vh", width : "100vw"}}>
-      <h1>Hello world</h1>
+      {/* <h1>Hello world</h1> */}
       <Time/>
       <SingleQuote/>
       <Greeting/>
       <Todo/>
+      <Weather/>
     </div>
   );
 }
