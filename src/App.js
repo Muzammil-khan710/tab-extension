@@ -5,6 +5,7 @@ import { Time } from './components/Time';
 import { Todo } from './components/Todo';
 import { useEffect, useState } from 'react';
 import { Weather } from './components/Weather';
+import { MainPage } from './pages/MainPage';
 
 
 function App() {
@@ -29,12 +30,12 @@ function App() {
 
   return (
     <div style={{backgroundImage : `url(${imageUrl})`, backgroundSize : "cover", height: "100vh", width : "100vw"}}>
-      {/* <h1>Hello world</h1> */}
-      <Time/>
+      {/* <Time/>
       <SingleQuote/>
       <Greeting/>
       <Todo/>
-      <Weather/>
+      <Weather/> */}
+      <MainPage/>
     </div>
   );
 }

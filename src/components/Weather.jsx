@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "./styles.css"
 
 const Weather = () => {
   const [coordinates, setCoordinates] = useState({ latitude: 0, longitude: 0 });
@@ -58,12 +59,12 @@ const Weather = () => {
 
   return (
     <div
-      className='weather-wrapper'
+      className='weather-container'
       onKeyDown={(e) => e.code === "Enter" && setIsInputVisible(false)}
     >
       {weather !== null && (
         <>
-          <div className='temp-wrapper'>
+          <div className='temp-container'>
             <img
               src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}
               width='50px'
@@ -82,7 +83,7 @@ const Weather = () => {
           {weather.location}
         </>
       )}
-      <button onClick={() => setIsInputVisible(true)}>Change city</button>
+      <button className="weather-btn" onClick={() => setIsInputVisible(true)}>Change city</button>
     </div>
   );
 };
