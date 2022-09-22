@@ -27,3 +27,9 @@
     font-size: 5rem;
     text-align: center;
 }
+
+.greeting {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+}

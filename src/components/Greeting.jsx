@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const Greeting = () => {
     const [greeting, setGreeting] = useState("")
+    const [name] = useState("Muzammil")
 
     useEffect(() => {
         const greetTime = new Date().getHours()
@@ -15,7 +16,7 @@ const Greeting = () => {
 
     return(
         <>
-            <div>{greeting}</div>
+            <div className="greeting">{greeting}, {name}</div>
         </>
     )
 }
