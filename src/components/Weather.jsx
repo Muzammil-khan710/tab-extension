@@ -32,7 +32,6 @@ const Weather = () => {
         humidity: data.main.humidity,
         wind: data.wind.speed,
       });
-      console.log(data)
     } catch (e) {
       console.log(e);
     }
@@ -66,7 +65,7 @@ const Weather = () => {
         <>
           <div className='temp-container'>
             <img
-              src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}
               width='50px'
               height='50px'
               alt='weather-icon'  

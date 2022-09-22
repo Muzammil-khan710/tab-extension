@@ -4,7 +4,6 @@ import { useGlobal } from './context/GlobalContext';
 import { MainPage } from './pages/MainPage';
 import { WelcomePage } from './pages/WelcomePage';
 
-
 function App() {
 
   const [imageUrl, setImageUrl] = useState()
@@ -16,7 +15,6 @@ function App() {
       `https://api.unsplash.com/photos/random/?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}&&orientation=landscape&&query=nature%20dark`
     )
       setImageUrl(data.urls.regular)
-    console.log(data)
     } catch(err) {
       console.log(err)
     }
