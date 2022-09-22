@@ -15,14 +15,14 @@
 .weather-btn {  
     background-color: transparent;
     border: none;
-    border-radius: 5px;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
+    color: #f0f8ff;
 }
 
 .weather-btn:hover {
-    color: #f1f1f1;
+    color: #5f5454;
 }
 
 .time {

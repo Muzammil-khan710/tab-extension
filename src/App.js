@@ -9,8 +9,7 @@ function App() {
 
   const [imageUrl, setImageUrl] = useState()
 
-  const { name, setName } = useGlobal()
-
+  const { name, setName, setMainFocus } = useGlobal()
   const unsplashUrl = async () => {
     try {
     const response = await axios.get(
@@ -32,8 +31,13 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  useEffect(() => {
+    setMainFocus(localStorage.getItem("focus"))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   return (
-    <div style={{backgroundImage : `url(${imageUrl})`, backgroundSize : "cover", height: "100vh", width : "100vw"}}>
+    <div style={{backgroundImage : `url(${imageUrl})`, backgroundSize : "cover", height: "100vh", width : "100vw", backgroundColor: 'black'}}>
       { name ?  <MainPage/> : <WelcomePage/> }
     </div>
   );
