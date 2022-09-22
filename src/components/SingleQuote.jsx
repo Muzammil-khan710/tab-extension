@@ -12,10 +12,10 @@ const SingleQuote = () => {
     const {quoteText, quoteAuthor} = randomQuote()
 
     return (
-    <>
+    <div className='quote-container'>
         <div>{quoteText}</div>
         <div>{quoteAuthor}</div>
-    </>
+    </div>
   )
 }
 
