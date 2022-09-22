@@ -13,7 +13,7 @@ function App() {
   const unsplashUrl = async () => {
     try {
     const { data } = await axios.get(
-      `https://api.unsplash.com/photos/randm/?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}&&orientation=landscape&&query=nature%20dark`
+      `https://api.unsplash.com/photos/random/?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}&&orientation=landscape&&query=nature%20dark`
     )
       setImageUrl(data.urls.regular)
     console.log(data)
