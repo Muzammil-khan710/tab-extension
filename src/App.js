@@ -12,13 +12,13 @@ function App() {
   const { name, setName, setMainFocus } = useGlobal()
   const unsplashUrl = async () => {
     try {
-    const response = await axios.get(
+    const { data } = await axios.get(
       `https://api.unsplash.com/photos/randm/?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}&&orientation=landscape&&query=nature%20dark`
     )
-      setImageUrl(response.data.urls.regular)
-    console.log('res',response)
+      setImageUrl(data.urls.regular)
+    console.log(data)
     } catch(err) {
-      console.log('err',err)
+      console.log(err)
     }
   }
 
