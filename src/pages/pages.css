@@ -1,0 +1,60 @@
+.welcome-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    gap: 1rem;
+}
+
+.welcome-text {
+    font-size: 2rem;
+}
+
+.welcome-input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 1.5rem ;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #f0f8ff;
+    text-align: center;
+}
+
+.focus {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.btn-container {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.btns {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    color: #f0f8ff;
+}
+
+.focus-input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 1.5rem ;
+    font-size: 1.5rem;
+    width: 20rem;
+    align-self: center;
+    background-color: transparent;
+    color: #f0f8ff;
+    text-align: center;
+}

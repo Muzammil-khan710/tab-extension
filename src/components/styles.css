@@ -1,0 +1,87 @@
+.weather-container {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    position: absolute;
+}
+
+.temp-container {
+    display: flex;
+    align-items: center;
+}
+
+.weather-btn {  
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    color: #f0f8ff;
+}
+
+.weather-btn:hover {
+    color: #5f5454;
+}
+
+.time {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.greeting {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+}
+
+.todo-container {
+    margin-left: 1rem;
+    gap: 1rem;
+    backdrop-filter: blur(5px);
+    width: fit-content;
+}
+
+.todo-heading {
+    font-size: 1.5rem;
+}
+
+.list-display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.todo-input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 1.5rem ;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #f0f8ff;
+}
+
+.delete-completed-btn, .btn {
+    background-color: black;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1rem 0;
+    cursor: pointer;
+
+}
