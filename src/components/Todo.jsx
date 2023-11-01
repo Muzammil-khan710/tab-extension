@@ -32,7 +32,7 @@ const Todo = () => {
   );
 
   return (
-    <div className='todo-container'>
+    <section className='todo-container'>
       {openTodoList ? (
         <>
           <div className='todo-heading'>Todo List</div>
@@ -75,7 +75,8 @@ const Todo = () => {
           Open Todo List
         </button>
       )}
-    </div>
+      {openTodoList &&  todoList.length > 0 && <button className="close-btn" onClick={() => setOpenTodoList(false)}>close</button>}
+    </section>
   );
 };
 export { Todo };

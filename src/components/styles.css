@@ -2,9 +2,11 @@
     display: flex;
     align-self: flex-end;
     flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
+    align-items: flex-end;
     position: absolute;
+    backdrop-filter: blur(1px);
+    padding-right: 25px;
+    top: 0;
 }
 
 .temp-container {
@@ -13,12 +15,15 @@
 }
 
 .weather-btn {  
-    background-color: transparent;
+    background-color:  #0400008f;
+    padding: 10px;
     border: none;
-    padding: 5px;
-    margin: 5px;
+    margin-top: 10px;
     cursor: pointer;
     color: #f0f8ff;
+    z-index: 10;
+    position: relative;
+    border-radius: 10px;
 }
 
 .weather-btn:hover {
@@ -51,7 +56,7 @@
 .todo-container {
     margin-left: 1rem;
     gap: 1rem;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     width: fit-content;
 }
 
@@ -75,7 +80,7 @@
     color: #f0f8ff;
 }
 
-.delete-completed-btn, .btn {
+.delete-completed-btn, .btn, .close-btn {
     background-color: black;
     color: #f1f1f1;
     border: none;
@@ -85,3 +90,27 @@
     cursor: pointer;
 
 }
+
+.close-btn {
+    margin-left: 10px;
+}
+
+.input-box {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background:  #0400008f;
+    outline: none;
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+
+.svg-btn {
+    background:  #0400008f;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
