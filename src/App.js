@@ -35,9 +35,9 @@ function App() {
   }, [])
 
   return (
-    <div style={{backgroundImage : `url(${imageUrl})`, backgroundSize : "cover", height: "100vh", width : "100vw"}}>
+    <main style={{backgroundImage : `url(${imageUrl})`, backgroundSize : "cover", height: "100vh", width : "100vw"}}>
       { name ?  <MainPage/> : <WelcomePage/> }
-    </div>
+    </main>
   );
 }
 
