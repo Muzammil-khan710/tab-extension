@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Stellar Tab",
   "author": "Muzammil khan",
-  "version": "2.0",
+  "version": "2.1",
   "description": "Personalize your new tab experience",
   "chrome_url_overrides": {
     "newtab": "index.html"
