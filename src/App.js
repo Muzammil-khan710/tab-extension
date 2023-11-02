@@ -35,7 +35,7 @@ function App() {
   }, [])
 
   return (
-    <main style={{backgroundImage : `url(${imageUrl})`, backgroundSize : "cover", height: "100vh", width : "100vw"}}>
+    <main style={imageUrl && {backgroundImage : `url(${imageUrl})`, backgroundSize : "cover", height: "100vh", width : "100vw"}}>
       { name ?  <MainPage/> : <WelcomePage/> }
     </main>
   );
